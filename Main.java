@@ -8,7 +8,8 @@ class Main {
 	private static final String[] answers = {
 		"$98,345 average salary in South Florida!",
 		"US News - 100 Best Jobs!",
-		"Top 10 Forbes In-Demand Jobs!"
+		"Top 10 Forbes In-Demand Jobs!",
+		"Current Students:"
 	};
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -36,9 +37,8 @@ class Main {
 		var ans = in.nextInt();
 		if (ans == 5) return true;
 		
-		if (ans < 4) {
-			System.out.println(answers[ans - 1]);
-		} else for (var e : students) System.out.println(e);
+		System.out.println(answers[ans - 1]);
+		if (ans == 4) for (var e : students) System.out.println(e); // print out students
 
 		return false;
 	}
