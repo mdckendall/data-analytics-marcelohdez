@@ -37,7 +37,7 @@ class Main {
 		if (ans == 5) return true;
 		
 		if (ans < 4) {
-			System.out.println(answers[ans]);
+			System.out.println(answers[ans - 1]);
 		} else for (var e : students) System.out.println(e);
 
 		return false;
